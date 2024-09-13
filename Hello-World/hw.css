@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(69, 53, 78);
+    
+}
+.hello{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    border:5px solid yellow;
+    padding:30px;
+    font-size: 6vw;
+    box-shadow: 0 0 25px 5px pink;
+    text-shadow:0 0 15px rgb(255, 255, 255);
+    text-align: center;
+}
+@media(max-width:700){
+    .hello{
+        font-size: 15px;
+    }
+}

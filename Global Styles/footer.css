@@ -1,14 +1,19 @@
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 footer {
     left:0;
-    background-color: black; /* Background color */
-    height: 30px;            /* Height of the footer */
-    width: 100%;             /* Full width */
-    color: wheat;            /* Text color */
-    text-align: center;      /* Center-align text */
-    font-size: 25px;         /* Font size */
-    position: fixed;         /* Fix the footer at the bottom */
-    bottom: 0;               /* Align it to the bottom */
+    background-color: black;
+    height: 30px;            
+    width: 100%;     
+    color: wheat;    
+    text-align: center;     
+    font-size: 25px;
+    position: fixed;         
+    bottom: 0;               
     font-family:SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;;
 }
 a{
