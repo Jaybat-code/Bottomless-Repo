@@ -66,8 +66,9 @@ a:hover{
 h1{
     color:white;
     text-align: center;
-    font-size: 2vw;
-    margin:0;
+    font-size: 40px;
+    margin:20 auto;
+    word-spacing: 10px;
 }
 @media (max-width: 500px){
 h1{
@@ -79,8 +80,3 @@ span{
     padding-right: 8px;
 }
 };
-    
-
-span{
-    padding-right:50px;
-}

@@ -1,0 +1,21 @@
+
+footer {
+    left:0;
+    background-color: black; /* Background color */
+    height: 30px;            /* Height of the footer */
+    width: 100%;             /* Full width */
+    color: wheat;            /* Text color */
+    text-align: center;      /* Center-align text */
+    font-size: 25px;         /* Font size */
+    position: fixed;         /* Fix the footer at the bottom */
+    bottom: 0;               /* Align it to the bottom */
+    font-family:SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;;
+}
+a{
+    color:pink;
+    text-decoration: none;
+}
+a:hover{
+    font-size:26px;
+    color:rgb(158, 117, 124)
+}
