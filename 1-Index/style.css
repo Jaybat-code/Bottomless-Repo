@@ -88,3 +88,12 @@ span{
     margin-right: 30px;;
     color:#fff
 }
+
+#hw:hover {
+    background-image: url('Assets/1.png');
+    background-size: 120%; 
+    background-position: center; 
+    color: transparent; 
+    border: 2px solid rgb(86, 121, 122); 
+    box-shadow: 2px 2px 5px 2px rgb(166, 201, 138); 
+}
