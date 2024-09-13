@@ -9,11 +9,11 @@ const numOfMed = document.getElementById("numOfMed");
 const numOfHard = document.getElementById("numOfHard");
 //function that whenever the document loads it sets the text as the current number of projects in categories
 function listenForLoad(){
-document.addEventListener("DOMContentLoaded",()=>{
-    numOfEasy.innerHTML=easy.length
-    numOfMed.innerHTML=medium.length
-    numOfHard.innerHTML=hard.length
-})
+    document.addEventListener("DOMContentLoaded",()=>{
+        numOfEasy.innerHTML=easy.length
+        numOfMed.innerHTML=medium.length
+        numOfHard.innerHTML=hard.length
+    })
 }
 //the actual function call of listenForLoad()
 listenForLoad();
