@@ -1,8 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 body{
     padding:0;
     margin:0;
     background-color: rgb(38, 38, 58);
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
 }
 .grey-box{
     background-color: rgb(102, 89, 124);
@@ -13,6 +17,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap:15px;
 
 }
 a{
@@ -20,13 +25,15 @@ a{
    font-weight: 999;
    color:wheat;
    padding:30px;
-   width:100px;
-   height:100px;
+   width:150px;
+   height:150px;
    font-size: 15px;
    display: flex;
    align-items: center;
+   justify-content: center;
    text-align: center;
    border:1px solid wheat;
+   border-radius: 20px;
 }
 a:visited{
     color:wheat;
@@ -34,10 +41,46 @@ a:visited{
 a:hover{
     background-color: rgb(70, 61, 85);;
 }
-.easy
+.easy{
+    background: linear-gradient(130deg, rgb(68, 221, 68), rgb(12, 78, 69));
+    
+}
+.easy:hover{
+    border:2px solid rgb(86, 121, 122);
+    box-shadow: 2px 2px 5px 2px rgb(166, 201, 138);
+}
+.medium{
+    background: linear-gradient(130deg, rgba(229, 233, 2, 0.658), rgb(158, 142, 49));
+}
+.medium:hover{
+    border:2px solid rgb(201, 89, 235);
+    box-shadow: 2px 2px 5px 2px rgb(166, 201, 138);
+}
+.hard {
+    background: linear-gradient(130deg, red, rgb(43, 9, 9));
+}
+.hard:hover{
+    border:2px solid burlywood;
+    box-shadow: 2px 2px 5px 2px rgb(151, 30, 30);
+}
+h1{
+    color:white;
+    text-align: center;
+    font-size: 2vw;
+    margin:0;
+}
+@media (max-width: 500px){
+h1{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+span{
+    padding-right: 8px;
+}
+};
+    
 
-.medium
-
-.hard{
-    background:linear-gradient(130deg, red,brown);
+span{
+    padding-right:50px;
 }
