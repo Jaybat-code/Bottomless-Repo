@@ -7,7 +7,10 @@ console.log(fullText.innerHTML);
 let colorValues = [0,0,0,0,0,0];
 
 fullText.addEventListener("click",()=>{
-    generateRandomColorValues();      
+    generateRandomColorValues();   
+    let body = document.querySelector("body")
+    let bodystyle = getComputedStyle(body);
+    console.log(bodystyle.getPropertyValue("background"));
 })
 
 function generateRandomColorValues(){

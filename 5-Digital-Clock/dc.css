@@ -3,7 +3,7 @@ body{
     background:linear-gradient(30deg,black 22%,cyan);
 }
 .clock{
-    width:1000px;
+    width:1300px;
     height:400px;
     background-color: grey;
     position:absolute;
@@ -13,4 +13,61 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding:25px;
 }
+.time{
+    background-color: rgb(45, 51, 45);
+    width:18%;
+    height:95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    color:wheat;
+    font-size:150px;
+}
+.buttons{
+    width:800px;
+    height:50px;
+    position: absolute;
+    left:50%;
+    display: flex;
+    justify-content: space-between;
+    top:25.5%;
+    transform: translate(-50%,-50%);
+    animation: float1 1s linear infinite;
+}
+.butt1{
+    height:5px;
+    width:5px;
+    background-color: sandybrown;
+    border:none
+}
+.butt2:hover,.butt1:hover{
+    background-color: rgb(66, 59, 59);
+    cursor: pointer;
+}
+.butt2{
+    height:10px;
+    width:10px;
+    background-color: rgb(172, 164, 122);
+    border:none
+}
+@keyframes float1{
+    0%{
+        top:0px;
+    }
+    25%{
+        top:10px;
+    }
+    50%{
+        bottom:20px;
+    }
+    75%{
+        right:40px;
+    }
+    100%{
+    bottom:50px
+    }
+}
+
