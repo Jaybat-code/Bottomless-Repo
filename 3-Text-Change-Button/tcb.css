@@ -11,7 +11,7 @@ h1{
 #text{
     position: absolute;
     left:50%;
-    top:30%;
+    top:20%;
     transform: translate(-50%,-60%);
     text-shadow: 1px 2px 3px white;
     font-size: 50px;

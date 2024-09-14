@@ -1,0 +1,16 @@
+body{
+    height:100vh;
+    background:linear-gradient(30deg,black 22%,cyan);
+}
+.clock{
+    width:1000px;
+    height:400px;
+    background-color: grey;
+    position:absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

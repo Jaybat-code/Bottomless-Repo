@@ -23,7 +23,7 @@ body{
 a{
    text-decoration: none;
    font-weight: 999;
-   color:wheat;
+   color:rgb(236, 232, 232);
    padding:5px;
    width:150px;
    height:150px;
@@ -38,7 +38,7 @@ a{
 }
 
 a:visited{
-    color:wheat;
+    color:rgb(236, 236, 231);
 }
 a:hover{
     background-color: rgb(70, 61, 85);;
@@ -104,4 +104,12 @@ span{
     color: transparent; 
     border: 2px solid rgb(86, 121, 122); 
     box-shadow: 2px 2px 5px 2px rgb(166, 201, 138); 
+}
+#rbc:hover{
+    background-image: url('Assets/3.png');
+    background-size: 135%; 
+    background-position: center; 
+    color: transparent; 
+    border: 2px solid rgb(86, 121, 122); 
+    box-shadow: 2px 2px 5px 2px rgb(166, 201, 138);
 }

@@ -1,0 +1,1 @@
+//I want to make a digital clock that will dynamically change the background smoothly as the day goes on, when the time is day it should be yellow and red and when it is night it should be black and cyan
