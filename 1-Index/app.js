@@ -17,4 +17,25 @@ function listenForLoad(){
 }
 //the actual function call of listenForLoad()
 listenForLoad();
+//adding some cool (search) functionality!
+const difficultyClasses = [easy,medium,hard]
+const difficultyNums = [numOfEasy,numOfMed,numOfHard]
 
+function searchForDifficulty() {
+    for (let i = 0; i < difficultyClasses.length; i++) {
+        difficultyNums[i].addEventListener("mouseover", () => {
+            for (let j = 0; j < difficultyClasses[i].length; j++) {
+                difficultyClasses[i][j].style.boxShadow = "0 0 20px yellow";
+            }
+        });
+
+        difficultyNums[i].addEventListener("mouseout", () => {
+            // Remove the box-shadow on mouse out
+            for (let j = 0; j < difficultyClasses[i].length; j++) {
+                difficultyClasses[i][j].style.boxShadow = "none";
+            }
+        });
+    }
+}
+
+searchForDifficulty();

@@ -3,12 +3,10 @@ body{
 }
 .container{
     border:5px solid black;
-    width:610px;
     position: absolute;
     left:50%;
     top:40%;
     transform: translate(-50%,-50%);
-    height:600px;
 
 }
 .screen{
@@ -18,6 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     border-bottom:5px solid black;
+    border-radius: 15px;
     font-size: 175px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 1px 2px 30px gainsboro;
@@ -44,14 +43,31 @@ body{
     grid-area: decrement;
 }
 
-.buttons input {
-    grid-area: input;
-    width: 200px; /* Adjust the width as needed */
+
+button{
+    border:1px solid pink;
+    border-radius: 20px;
     height:50px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top:5px;
 }
-input[type="number"] {
-    -moz-appearance: textfield;
+#increment{
+    background-color: rgb(126, 219, 126);
+}
+#increment:hover{
+    background-color: rgb(102, 175, 102);
+}
+#increment:active{
+    background-color: rgb(78, 134, 78);
+    width:198px;
+}
+#decrement{
+    background-color: rgb(243, 115, 98);
+}
+#decrement:hover{
+    background-color: rgb(145, 83, 83);
+}
+#decrement:active{
+    background-color: rgb(68, 25, 25);
+    width:198px;
+    color:wheat
 }
