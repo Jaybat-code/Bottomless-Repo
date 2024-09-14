@@ -1,0 +1,31 @@
+body{
+    background:linear-gradient(135deg,rgb(0, 0, 0),rgb(255, 255, 255));
+    height:100vh;
+}
+.color-display{
+    margin:400px auto;
+    text-align: center;
+    background-color: black;
+    color:white;
+    width:900px;
+    height:150px;
+    border-radius: 100px;
+    border:5px dashed white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+}
+.color-display:hover{
+    border:6px solid yellow;
+}
+.color-display:active{
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 20px 5px yellow;
+}
+p{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
