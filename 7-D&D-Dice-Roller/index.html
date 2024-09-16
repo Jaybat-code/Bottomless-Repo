@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="content">
-        <div class="elem1"><img src="Assets/dnd-dice.png" alt="D&D Dice"><h1>D&D Dice Generator</h1></div>
+        <div class="elem1"><img id="executeBtn" src="Assets/dnd-dice.png" alt="D&D Dice"><h1>D&D Dice Generator</h1></div>
         <div class="elem2">
             <fieldset>
                 <legend>How Many Dice Would You Like To Roll?</legend>
@@ -19,7 +19,7 @@
                 <button id="fourDie">4</button>
                 <button id="fiveDie">5</button>
                 <button id="tenDie">10</button>
-                <button id="customDie" class="custom">Custom</button>
+                <button id="customDie" class="custom"><input id="customValue" placeholder="0" type="text">Custom</button>
             </fieldset>
         </div>
         <div class="elem3">
@@ -42,5 +42,6 @@
    
     
     <footer>Go To Index:<a href="/1-Index/index.html"> Here</a></footer>
+    <script src="app.js"></script>
 </body>
 </html>
