@@ -3,11 +3,7 @@ const Hourtxt = document.getElementById("Hour");
 const MinuteTxt = document.getElementById("Minute");
 const SecondTxt = document.getElementById("Second");
 const MarideanTxt = document.getElementById("Maridean");
-
 const allText = [Hourtxt,MinuteTxt,SecondTxt];
-
-
-
 function getTime(){
     const currentDate = new Date();
     const gets=[currentDate.getHours(),currentDate.getMinutes(),currentDate.getSeconds()]
