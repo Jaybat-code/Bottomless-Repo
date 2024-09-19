@@ -1,0 +1,88 @@
+body{
+    background:radial-gradient( rgb(118, 120, 199),rgb(43, 16, 75));
+    height:100vh;
+}
+.container{
+    height:850px;
+    width:1200px;
+    background-color: rgb(183, 209, 203);
+    margin:120px auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 100px 5px black;
+}
+.controller{
+    height:10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    width:300px;
+    font-size: 30px;
+    height:50px;
+    border:1px solid darkcyan;
+    opacity: .8;
+    border-radius: 20px;
+}
+.output{
+    height:120px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.addStudent{
+    background-color: rgb(63, 167, 89);
+}
+.delStudent{
+    background-color: rgb(218, 91, 91);
+}
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+button:active{
+    cursor:grabbing;
+}
+.addStudent:active{
+    background-color: rgb(42, 112, 59);
+}
+.delStudent:active{
+    background-color: rgb(148, 60, 60);
+}
+.studentDisplay{
+    border:5px solid black; 
+    width:90%;
+    margin:50px auto;
+    height:500px;   
+    border-radius: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap:10px;
+    padding:40px;
+}
+.studentCard{
+    width:50px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(20, 130, 180);
+    border-radius: 50%;
+    border:2px solid black;
+}
+.currentCard{
+    border:5px solid black;
+    height:120px;
+    width:200px;
+    text-align: center;
+    font-size: medium;
+}
+#quirk{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}

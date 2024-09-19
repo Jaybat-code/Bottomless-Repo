@@ -1,0 +1,21 @@
+A teacher in Sutherland High School is tired of manually entering grades, class averages ect.
+they want an easy system where they can type all 24 grades from their students and see if they passed or failed
+in the testing demo they want a wide range of values so if a score is not inputted it will cycle through randomly
+
+#Components:
+> Body
+ >Main Container
+  >Controller (where you input the information){
+   >Add Student: A button that pushes a new student score into an array if a value is not selected it will pick randomly trhough 60 and 100
+        > Our goofy dev doesn't know how objects work quite yet so there will be a massive array with unique names that will be tagged with a student score for later identification
+   >Delete Student: Removes the last student that was inputted into the array
+   >Compute Data: Does the calculation in the background to be displayed in the output section.
+  }
+  >OutPut{
+    It will show the class average, pass/fail rate, all student scores and when you hover over a student score an ID card will show up with the studends name, grade and it will also share a weird quirk about them.
+
+  }
+
+
+
+  A Teachers Classroom Does Not Exceed 42 Students At One Time.
