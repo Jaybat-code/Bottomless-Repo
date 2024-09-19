@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="/0-Global Styles/footer.css">
+    <title>JavaScript Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <audio src="./Assets/notification-beep-229154.mp3" id="click-sound"></audio>
+    <audio src="./Assets/level-up-3-199576.mp3" id="equals-sound"></audio>
+    <link rel="stylesheet" href="/0-Global Styles/footer.css">
 </head>
 <body>
-    <div class="calculator">
+    <header>
+        <h3>JavaScript Calculator(<img alt="darkmode" id="icon" width="50px" height="50px" src="./Assets/day-of-the-dead.png"></img>)</h3>
+    </header>
+    <main>
+        <div class="calculator-body">
+            <div  class="screen">
+                <input type="text" readonly name="screen" id="screen">
+            </div>
+            <div class="button-container">
+                <button class="input-button" id="ac">AC</button>
+                <button class="input-button" id="+/-">+/-</button>
+                <button class="input-button" id="%">%</button>
+                <button class="input-button" id="÷">÷</button>
+                <button class="input-button" id="7">7</button>
+                <button class="input-button" id="8">8</button>
+                <button class="input-button" id="9">9</button>
+                <button class="input-button" id="X">X</button>
+                <button class="input-button" id="4">4</button>
+                <button class="input-button" id="5">5</button>
+                <button class="input-button" id="6">6</button>
+                <button class="input-button" id="-">-</button>
+                <button class="input-button" id="1">1</button>
+                <button class="input-button" id="2">2</button>
+                <button class="input-button" id="3">3</button>
+                <button class="input-button" id="+">+</button>
+                <button class="input-button" id="0">0</button>
+                <button class="input-button" id="^">^</button>
+                <button class="input-button" id=".">.</button>
+                <button class="input-button" id="=">=</button>
+            </div>
+        </div>
+    </main>
 
-    </div>
     <footer>Go To Index:<a href="/1-Index/index.html"> Here</a></footer>
     <script src="app.js"></script>
 </body>
