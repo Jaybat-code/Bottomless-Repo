@@ -1,7 +1,7 @@
 //text to be used later onScreen
 let xp = 0;
 let health = 100;
-let cash = 4000;
+let cash = 50;
 let currentWeaponIndex = 0;
 let fighting;
 let civicDanger;
@@ -43,8 +43,28 @@ const locations = [
         "button Text": ["Attack", "Dodge", "Run"],
         "button Functions": [attack, dodge, goRest],
         text: "You have found yourself in an altercation!"
-    }
+    },
+    {
+        name: "kill enemy",
+        "button Text": ["Go Rest", "Go Rest", "Go Rest"],
+        "button Functions": [goRest, goRest, goRest],
+        text: 'The enemy yells "Arg!" as they die. You gain experience points and find cash.'
+      },
+      {
+        name: "lose",
+        "button Text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button Functions": [restart, restart, restart],
+        text: "You die. &#x2620;"
+      },
+      {
+        name: "win",
+        "button Text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button Functions": [restart, restart, restart],
+        text: "You defeated Kasperov! YOU WIN THE GAME! &#x1F389;"
+      }
+
 ];
+//enemy types
 const enemies = [
     {
         name:"Innocent Civilian",
@@ -64,9 +84,10 @@ const enemies = [
     {
         name:"Kasperov",
         level:20,
-        health:350
+        health:500
     },
 ]
+//weapon types
 const weapons = [
     {
         name: " Knife",
@@ -99,7 +120,7 @@ function update(location) {
     button1.onclick = location["button Functions"][0];
     button2.onclick = location["button Functions"][1];
     button3.onclick = location["button Functions"][2];
-    text.innerText = location.text;
+    text.innerHTML = location.text;
 }
 //will take you home so that you can rest up
 function goRest() {
@@ -188,9 +209,68 @@ function goFight(){
     enemyName.innerText=enemies[fighting].name;
     enemyHealthText.innerText=enemyHealth;
 }
-function attack(){
+function attack() {
+    // Enemy attacks player first
+    const enemyAttackValue = getEnemyAttackValue(enemies[fighting].level);
+    health -= enemyAttackValue; // Deduct health from player
+    healthText.innerText = health; // Update player health on screen
 
+    // Player attacks enemy
+    const playerDamage = weapons[currentWeaponIndex].damage + Math.floor(Math.random() * xp) + 1;
+    enemyHealth -= playerDamage; // Deduct health from enemy
+    enemyHealthText.innerText = enemyHealth; // Update enemy health on screen
+
+    // Show the battle outcome on the text area
+    text.innerText = "The " + enemies[fighting].name + " attacks you and deals " + enemyAttackValue + " damage.\n";
+    text.innerText += "You attack the " + enemies[fighting].name + " with your " + weapons[currentWeaponIndex].name + " and deal " + playerDamage + " damage.\n";
+
+    // Check if the player has died
+    if (health <= 0) {
+        lose(); // Player loses the game
+    } else if (enemyHealth <= 0) {
+        if (fighting === 3) {
+            winGame(); // The player defeated Kasperov (final boss)
+        } else {
+            defeatEnemy(); // The player defeated a regular enemy
+        }
+    }
 }
-function dodge(){
 
+// Make sure you have this function to calculate enemy attack value
+function getEnemyAttackValue(level) {
+    return Math.floor(level * 2) + Math.floor(Math.random() * 5); // Adjust as needed
+}
+
+
+
+
+function dodge(){
+    text.innerText = "You dodge the attack from the " + enemies[fighting].name;
+}
+
+function defeatEnemy() {
+    cash += Math.floor(enemies[fighting].level * 6.7);
+    xp += enemies[fighting].level;
+    cashText.innerText = cash;
+    xpText.innerText = xp;
+    update(locations[4]); // Go to "kill enemy" location after defeating the enemy
+    }
+    
+function lose(){
+    healthText.innerText=0;
+    update(locations[5]);
+}
+function winGame(){
+    update(locations[6]);
+}
+function restart(){
+    xp=0;
+    health=100;
+    cash=20;
+    currentWeaponIndex=0;
+    inventory=["Knife"];
+    cashText.innerText=cash;
+    healthText.innerText=health;
+    xpText.innerText=xp;
+    update(locations[0]);
 }
