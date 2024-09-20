@@ -1,0 +1,14 @@
+GameSoft needs a demo of a video game. A text based rpg that dynamically updates the text as players choose 
+inputs. They want the demo to last up until the final boss, Agent Kasperov. Their developer needs to implement
+an assessible ui and an enjoyable player experience.
+
+>body
+ >game
+  >Player Stats
+    >XP: health: cash: 
+  >Player Input Buttons
+    Button1 button2 button3
+  >Enemy Stats
+    >Name: Health:
+  >Dynamic text
+    Changes based off of what is happening in the program.

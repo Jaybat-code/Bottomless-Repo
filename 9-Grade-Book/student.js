@@ -161,8 +161,5 @@ function getAverageGrade(){
     return Math.floor(total/studentGrades.length);
 }
 
-    
-
 addStudentID();
 deleteStudentID();
-listenForStudentHover();
