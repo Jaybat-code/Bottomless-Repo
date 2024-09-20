@@ -3,3 +3,58 @@ body{
     height:100vh;
     color:wheat;
 }
+#game{
+    max-width:500px;
+    max-height: 300px;
+    background-color: rgb(63, 231, 189);
+    margin:100px auto;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 5px cyan;
+}
+#playerStats{
+    background-color: #16163a;
+    padding:10px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+#controls{
+    padding:10px;
+    display:flex;
+    justify-content: center;
+}
+button{
+    margin-right: 10px;;
+}
+#enemyStats{
+    padding:10px;
+    background-color: rgb(69, 15, 80);
+    color:rgb(224, 45, 45);
+    font-weight: 900;
+    margin-bottom: 5px;
+    display: none;
+}
+.stat{
+    padding-right: 20px;;
+}
+.Enemystat{
+    padding-right: 20px;
+}
+#dynamicText{
+    padding:15px;
+    background-color: #16163a;
+    color:wheat;
+    word-spacing: 5px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+}
+button{
+    cursor: pointer;
+    height:30px;
+    background-color: #16163a;
+    color:rgb(58, 50, 35);
+    background-image: linear-gradient(cyan, rgb(109, 109, 153));
+    padding:5px;
+}
