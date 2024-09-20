@@ -1,5 +1,5 @@
 body{
-    background-color: #16163a;
+    background: linear-gradient(-130deg, rgb(228, 193, 37), rgb(91, 219, 236),rgb(130, 173, 164),rgb(32, 112, 85));
     height:100vh;
     color:wheat;
 }

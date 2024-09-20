@@ -95,14 +95,14 @@ const weapons = [
     },
     {
         name: " Revolver",
-        damage: 20,
+        damage: 10,
     },
     {
         name: " Rifle",
-        damage: 50,
+        damage: 20,
     },
     {
         name: " Sniper",
-        damage: 100,
+        damage: 30,
     },
 ]
