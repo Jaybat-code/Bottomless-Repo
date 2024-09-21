@@ -1,0 +1,16 @@
+We need to find a way that we can smoothly glide across a screen using the arrowkeys, there needs to be bounds that the player falls in, the player cannot escape these bounds
+This project is the first one to incorperate input based movement. 
+
+RESTRICTION: Only use of JS Documentation may be used to figure this out
+RESTRICTION: Character must be a circle
+RESTRICTION: Player must have a variable speed.
+RESTRICTION: Must use an object to define player
+
+
+2 objects one for sanbox and one for player
+
+2 switch statements binded to event listeners
+
+a function that is animated
+
+a function call
