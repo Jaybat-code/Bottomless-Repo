@@ -1,6 +1,14 @@
 *{
     box-sizing: border-box;
 }
+.sticky-container {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Stick at the top of the viewport */
+    z-index: 10; /* Make sure it stays on top of other elements when scrolling */
+    
+}
+
 body{
     padding:0;
     margin:0;
@@ -18,7 +26,31 @@ body{
     justify-content: center;
     align-items: center;
     gap:15px;
-
+}
+.about{
+    width:40%;
+    padding:20px;
+    text-wrap: wrap;
+    border-radius: 50px;
+    height:150px;
+    text-align: center;
+    background-color: white;
+    margin:20px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:rgb(102, 89, 124);
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px); /* Slide up when appearing */
+}
+.about.visible {
+    opacity: 1;
+    transform: translateY(0); /* Reset the slide when fully visible */
 }
 a{
    text-decoration: none;
@@ -67,7 +99,10 @@ a:hover{
     box-shadow: 2px 2px 5px 2px rgb(151, 30, 30);
 }
 h1{
-    color:wheat
+    color:wheat;
+    background-color:rgb(102, 89, 124); 
+    width:60%;
+    margin:0 auto;
 }
 @media(max-width:800px){
     h1{
@@ -155,6 +190,14 @@ span{
 }
 #rpg:hover{
     background-image: url('Assets/9.png');
+    background-size: 160%; 
+    background-position: center; 
+    color: transparent; 
+    border: 2px solid rgb(86, 121, 122); 
+    box-shadow: 2px 2px 5px 2px rgb(166, 201, 138);
+}
+#fstep:hover{
+    background-image: url('Assets/10.png');
     background-size: 160%; 
     background-position: center; 
     color: transparent; 

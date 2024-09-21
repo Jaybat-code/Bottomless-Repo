@@ -85,7 +85,6 @@ window.addEventListener("keydown", (e) => {
         case "ArrowLeft": player.isMovingLeft = true; break;
     }
 });
-
 window.addEventListener("keyup", (e) => {
     switch (e.key) {
         case "ArrowUp": player.isMovingUp = false; break;
