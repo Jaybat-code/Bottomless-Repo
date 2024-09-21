@@ -1,0 +1,10 @@
+body{
+    background-color:green;
+}
+img{
+    position: absolute;
+    border-radius: 50%;
+    width:1000px;
+    top:50px;
+    left:50px;
+}
