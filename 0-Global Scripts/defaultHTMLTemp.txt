@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/0-Global Styles/footer.css">
+</head>
+<body>
+    
+    <footer>Go To Index:<a href="/1-Index/index.html"> Here</a></footer>
+    <script src="app.js"></script>
+    <script src="/0-Global Scripts/handleEXT.js"></script>
+</body>
+</html>
+
+
+
+
+Default template used for all HTML pages, if more global stuff is added It will reflect here.
