@@ -8,7 +8,33 @@
     <link rel="stylesheet" href="/0-Global Styles/footer.css">
 </head>
 <body>
-    
+    <header><h1 id="title"><span id="r">Rock</span> <span id="p">Paper</span> <span id="s">Scissors</span></h1></header>
+    <div class="calls">
+        <div class="playerCalls">
+            <h1>Player Picks <span id="currentPlay"></span></h1>
+        </div>
+        <div class="stats">
+            <h1 id="victorDisplay">PICK AN OPTION</h1>
+            <h3>Player Wins: <span id="playerWins"></span></h3>
+            <h3>Player Losses: <span id="playerLosses"></span></h3>
+            <h3>Ties: <span id="playerTies"></span></h3>
+        </div>
+        <div class="computerCalls">
+            <h1>Computer Picks <span id="currentCompPlay"></span></h1>
+        </div>
+
+    </div>
+    <div class="images">
+        <h1 class="who">Player</h1>
+        <img id="Rock" class="myimg" src="./Assets/Rock.png" alt="">
+        <img id="Paper" class="myimg" src="./Assets/Paper.png" alt="">
+        <img id="Scissors" class="myimg" src="./Assets/Scissors.png" alt="">
+        <h1 class="vs" id="versus">VERSUS</h1>
+        <img src="./Assets/Rock.png" alt="">
+        <img src="./Assets/Paper.png" alt="">
+        <img src="./Assets/Scissors.png" alt="">
+        <h1 class="who">Computer</h1>
+    </div>
     <footer>Go To Index:<a href="/1-Index/index.html"> Here</a></footer>
     <script src="app.js"></script>
     <script src="/0-Global Scripts/handleEXT.js"></script>

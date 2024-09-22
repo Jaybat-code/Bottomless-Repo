@@ -8,7 +8,10 @@ const descriptions = [
     "This is a port of one of my older projects. While it does some math, it’s an extremely limited calculator because it can only store one operator in memory at a time. For example, you can do '2 + 2 = 4,' but you can't follow that up with '4 / 2 = 2.'",
     "My grade book app is one I am extremely proud of. Without any knowledge of objects, I stored everything in arrays. This was also my first time using add and delete buttons! You can add a student, and they will receive a random grade, a random name, and a quirk about them.",
     "This mini RPG project is inspired heavily by a FreeCodeCamp tutorial but with UI changes, storyline changes, and different enemy types. It’s a fun, short story game about fighting a man named Kasperov (not the chess champion). I wanted to give it a Brooklyn-meets-Russia vibe.",
-    "First Steps was me experimenting with animation in JavaScript. I made a controllable player that can move in 360 degrees, and then I decided to add a 'feed and grow' aspect to the program. You can spawn bits of cheese that will grow and speed up your player."
+    "First Steps was me experimenting with animation in JavaScript. I made a controllable player that can move in 360 degrees, and then I decided to add a 'feed and grow' aspect to the program. You can spawn bits of cheese that will grow and speed up your player.",
+    "This was my first time building rock paper scissors from memory with no external help with the logic. I utilized switch statements, doubly nested loops, objects even template literals. I even threw in some audio and animations, this project was a labor of love.",
+
+
 ];
 
 const about = document.getElementById("about");
