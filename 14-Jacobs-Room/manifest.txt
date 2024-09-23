@@ -1,0 +1,11 @@
+Interactivity Moduals:
+
+Object: Bed
+Change: Linear Gradient Outside Fades To Darker Green And Then Back To the Regular Green, Players Position Is Put Ontop Of Bed
+Text: I really should get to bed, It has been a long long day
+
+Object Weights
+Change: Player Gets Slightly bigger as they lift weights
+Text: You can never get too big right?
+
+

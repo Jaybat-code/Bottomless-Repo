@@ -36,11 +36,11 @@ body{
     width:150px;
     position:absolute;
     right:350px;
-    background-color: brown;
+    background-color: rgb(121, 84, 16);
     border:5px solid black;
 }
 .dressor{
-    background-color: brown;
+    background-color:rgb(121, 84, 16);
     top:0px;
     width:125px;
     height:250px;
@@ -65,15 +65,29 @@ body{
 }
 .desk{
     position:absolute;
-    background-color: brown;
+    background-color: rgb(121, 84, 16);
     top:300px;
     height:450px;
     width:186px;
     border:5px solid black;
 }
-.trash{
-    background-image: url(./Assets/trash.png);
+.trash{ 
+    background-image: url(./Assets/betterTrash.png);
     position:absolute;
     top:200px;
-    left:200px;
+    left:320px;
+    width:67px;
+    height:70px;
+    background-size: cover;
+    background-position: center;
+}
+.trashcan{
+    border-radius: 50%;
+    width:75px;
+    height:75px;
+    position:absolute;
+    background-color: purple;
+    left:0;
+    bottom:100px;
+    border:5px solid black;
 }
