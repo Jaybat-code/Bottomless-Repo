@@ -10,8 +10,8 @@ const descriptions = [
     "This mini RPG project is inspired heavily by a FreeCodeCamp tutorial but with UI changes, storyline changes, and different enemy types. It’s a fun, short story game about fighting a man named Kasperov (not the chess champion). I wanted to give it a Brooklyn-meets-Russia vibe.",
     "First Steps was me experimenting with animation in JavaScript. I made a controllable player that can move in 360 degrees, and then I decided to add a 'feed and grow' aspect to the program. You can spawn bits of cheese that will grow and speed up your player.",
     "This was my first time building rock paper scissors from memory with no external help with the logic. I utilized switch statements, doubly nested loops, objects even template literals. I even threw in some audio and animations, this project was a labor of love.",
-
-
+    "I needed quite a lot of help to build this from documentation and other peoples examples I am hoping to revisit all of these projects and make them a lot better once I know what I'm talking about more lol. This project was fun to build and my introduction to 2D Matrix",
+    "I had this idea for a while now of remaking my room just in code (with no knowledge of collision and how that works) so most of my code was figuring out how to 'Animate' my player. I am hoping to add a LOT of interactivity to this project though, All of these are WIPS!",
 ];
 
 const about = document.getElementById("about");
