@@ -1,5 +1,5 @@
 const sandbox = document.getElementById("sandBox");
-let cheeseAmount = 25;
+let cheeseAmount = 75;
 
 const player = {
     id: document.getElementById("player"),
