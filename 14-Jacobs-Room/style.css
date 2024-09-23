@@ -1,0 +1,79 @@
+body{
+    background-color: green;
+}
+.room{
+    height:1000px;
+    width:1000px;
+    background-image: url(./Assets/pexels-fwstudio-33348-132193.jpg);
+    background-size: cover;
+    background-color: brown;
+    border:10px solid rgb(22, 88, 55);
+    margin:100px auto;
+    position: relative;
+}
+.jacob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:115px;
+    height:75px;
+    rotate: 0deg;
+    background-image: url(./Assets/Jacob.png);
+    position:absolute;
+    background-position: center;
+    border:5px solid black;
+}
+.bed{
+    position:absolute;
+    height:600px;
+    width:350px;
+    background:linear-gradient(90deg,rgb(63, 59, 59),darkgray);
+    right:0;
+    border:5px solid brown
+}
+.table{
+    height:150px;
+    width:150px;
+    position:absolute;
+    right:350px;
+    background-color: brown;
+    border:5px solid black;
+}
+.dressor{
+    background-color: brown;
+    top:0px;
+    width:125px;
+    height:250px;
+    border:5px solid black
+}
+.weights{
+    background-color: darkslateblue;
+    width:75px;
+    height:150px;
+    position:absolute;
+    top:600px;
+    right:0px;
+    border:5px solid black;
+}
+.onepiece{
+    position:absolute;
+    background-color: wheat;
+    height:60px;
+    width:400px;
+    bottom:0px;
+    right:300px
+}
+.desk{
+    position:absolute;
+    background-color: brown;
+    top:300px;
+    height:450px;
+    width:186px;
+    border:5px solid black;
+}
+.trash{
+    background-image: url(./Assets/trash.png);
+    position:absolute;
+    top:200px;
+    left:200px;
+}
