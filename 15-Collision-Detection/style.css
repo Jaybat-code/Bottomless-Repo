@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+.wasp{
+    background-image: url(wasp.png);
+    height: 100px;
+    width:100px;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg);
+    margin:500px 500px;
+    border-radius: 50%;
+}
