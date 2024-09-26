@@ -1,0 +1,10 @@
+body{
+    background:radial-gradient(rgb(114, 185, 136) 45%,rgb(253, 243, 156));
+    height:100vh;
+}
+.gameFrame{
+    border:1px solid black;
+    height:500px;
+    width:500px;
+    margin:100px auto;
+}

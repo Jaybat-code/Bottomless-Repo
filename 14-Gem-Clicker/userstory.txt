@@ -1,0 +1,42 @@
+#We want to make a clicker type game with 5 upgradeables, the game should have fair balance in its purchase amount inflation and output of gems.
+#This will be my most complex project so far, Everything needs to be neat and readable, this should take 3+ days but be finished by end of month.
+(Main Container Encapsulating Program){
+    (Settings):Disable Sound: Reset Game: Enable Cheats ("Everything will cost 0"); 
+        UI Component should be a cog wheel and a menu dropdown with smooth animation, this project should look great not good
+    (Information):Number Of Gems: Gems Per Second
+        Should be updated dynamically every .25 seconds! Shareholders need this to be .25 seconds.
+    (Main Click Element) Image of a Gem:
+        on click your gems amount should increment by 1 and a low opactiy gem should fall from the gem down to the bottom of the screen.
+    (Shop) 
+        1. Gem Chisel (cost 10gems) (inflation .15) (output +1 gem per click)
+        2. mining cart (cost 100 gems) (inflation .12) (output gps .5)
+        3. gem drill (cost 500 gems) (inflation .20) (output +5 gem per click)
+        4. crystal forge (cost 500 gems) (inflation .18) (output 5 games per second)
+        5. gem spirit (cost 500 gems) (inflation .25) (ouput: gps +50)
+}
+
+sounds: 
+Gem Chisel
+
+    Sound Effect: A light "chisel tapping stone" sound.
+    SEO Tag: "chisel hit stone light"
+
+Mining Cart
+
+    Sound Effect: A "rolling cart" sound with a metallic clang at the end.
+    SEO Tag: "minecart rolling metal clang"
+
+Gem Drill
+
+    Sound Effect: A short "drill powering up" sound, like an industrial drill.
+    SEO Tag: "drill sound short industrial"
+
+Crystal Forge
+
+    Sound Effect: A "forge heat flare" or "metal clank" to represent forging.
+    SEO Tag: "metal forging heat flare"
+
+Gem Spirit
+
+    Sound Effect: A mystical "shimmer" or "ethereal chime."
+    SEO Tag: "magic shimmer ethereal chime"
