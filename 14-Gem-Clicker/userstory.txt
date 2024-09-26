@@ -6,7 +6,7 @@
     (Information):Number Of Gems: Gems Per Second
         Should be updated dynamically every .25 seconds! Shareholders need this to be .25 seconds.
     (Main Click Element) Image of a Gem:
-        on click your gems amount should increment by 1 and a low opactiy gem should fall from the gem down to the bottom of the screen.
+        on click your gems amount should increment by 1 
     (Shop) 
         1. Gem Chisel (cost 10gems) (inflation .15) (output +1 gem per click)
         2. mining cart (cost 100 gems) (inflation .12) (output gps .5)

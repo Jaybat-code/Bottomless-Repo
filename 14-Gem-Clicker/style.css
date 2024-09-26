@@ -1,10 +1,161 @@
-body{
-    background:radial-gradient(rgb(114, 185, 136) 45%,rgb(253, 243, 156));
-    height:100vh;
+body {
+    background: radial-gradient(rgb(114, 185, 136) 45%, rgb(253, 243, 156));
+    height: 100vh;
 }
-.gameFrame{
-    border:1px solid black;
-    height:500px;
-    width:500px;
-    margin:100px auto;
+
+.gameFrame {
+    border: 3px solid rgb(68, 30, 30);
+    border-radius: 20px;
+    height: 1000px;
+    width: 1000px;
+    margin: 200px auto;
+    box-shadow: 1px 1px 200px 5px rgb(253, 255, 148);
+    position: relative;
+    overflow: visible; /* Ensure overflow visibility */
+}
+
+.cog {
+    position: absolute;
+    right: 25px;
+    width: 75px;
+    top: 5px;
+}
+
+.cog:hover {
+    width: 70px;
+    right: 30px;
+    top: 5px;
+}
+
+.gembox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 600px;
+    height: 1000px;
+}
+
+.shopbox {
+    position: absolute;
+    right: 0px;
+    height: 900px;
+    bottom: 0px;
+    width: 397px;
+    border: 5px solid black;;
+}
+
+.settingsCard {
+    width: 800px;
+    height: 800px;
+    background-color: rgb(173, 206, 191);
+    position: absolute;
+    top: 50px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10;
+    border-radius: 100px;
+    display:none;
+    border:10px solid black;
+    
+    
+}
+.settingsCard.show {
+    display: block; 
+}
+.settingsCard,h1{
+    text-align: center;
+    margin-top: 50px;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.settButt{
+    width:100px;
+    padding:20px;
+    margin-left: 20px;;
+    border-radius: 50%;
+    color:orange;
+    font-weight: 800;
+    background:linear-gradient(130deg,black,darkblue);
+    border:0px;
+}
+.settButt:hover{
+    border:5px solid white;
+    background:linear-gradient(130deg,gray,cyan);
+    color:black
+}
+.gemPic{
+    width:600px;
+    background-position: center;
+    position:absolute;
+    left:-2px;
+    top:150px;
+
+}
+h2{
+    margin-left: 10px;
+    margin-top: 10px;;
+    text-align: center;
+}
+h2:nth-child(1){
+    margin-top: 50px;
+}
+.gemPic:active{
+    width:575px;
+    left:8px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin:20px;
+    font-weight: 600;
+}
+.shopbox {
+    position: absolute;
+    right: 0px;
+    height: 900px;
+    bottom: 0px;
+    width: 397px;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shop-item {
+    background: linear-gradient(to bottom, #e7e7e7, #ffffff);
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.shop-item h3 {
+    margin: 0;
+    color: #444;
+}
+
+.shop-item p {
+    margin: 5px 0;
+}
+
+.purchase-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.purchase-button:hover {
+    background-color: #45a049;
 }

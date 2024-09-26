@@ -8,9 +8,59 @@
     <link rel="stylesheet" href="/0-Global Styles/footer.css">
 </head>
 <body>
-    <main id="gameFrame" class="gameFrame">
+            
 
+    <main id="gameFrame" class="gameFrame">
+        <img aria-label="Settings Cog" id="settings" class="cog" src="./Assets/cog.png" alt="Settings">
+        <div class="settingsCard" id="settingsCard">
+            <h1>Disable SFX:<button class="settButt">Disable</button></h1>
+            <h1>Enable Cheats:<button class="settButt">Enable</button></h1>
+            <h1>Reset Progress:<button class="settButt">Reset</button></h1>
+        </div>
+        <div class="gembox" id="gembox">
+            <h2>Gems Collected:&nbsp;<span id="gemNum">0</span>&nbsp;Gems</h2>
+            <h2>Gems Per Second:&nbsp;<span id="gps">0</span>/gps</h2>
+            <h2>Gems Per Click:&nbsp;<span id="gpc">1</span>/gpc</h2>
+            <img id="gem" class="gemPic" src="./Assets/gem.png" alt="A beautiful gem">
+        </div>
+
+        <div class="shopbox" id="shopbox">
+            <p class="title">Gem Improvement Shop</p>
+            <hr>
+            <div class="shop-item" id="gemChisel">
+                <h3>Gem Chisel</h3>
+                <p>Cost: <span id="gcCost" class="item-cost">10</span> Gems</p>
+                <p>Output: +1 Gem per click</p>
+                <button id="gcBuy" class="purchase-button">Purchase</button>
+            </div>
+            <div class="shop-item" id="miningCart">
+                <h3>Mining Cart</h3>
+                <p>Cost: <span id="mcCost" class="item-cost">100</span> Gems</p>
+                <p>Output: +1 Gems per second</p>
+                <button id="mcBuy" class="purchase-button">Purchase</button>
+            </div>
+            <div class="shop-item" id="gemDrill">
+                <h3>Gem Drill</h3>
+                <p>Cost: <span id="gdCost" class="item-cost">500</span> Gems</p>
+                <p>Output: +5 Gems per click</p>
+                <button id="gdBuy" class="purchase-button">Purchase</button>
+            </div>
+            <div class="shop-item" id="crystalForge">
+                <h3>Crystal Forge</h3>
+                <p>Cost: <span id="cfCost" class="item-cost">1000</span> Gems</p>
+                <p>Output: +5 Gems per second</p>
+                <button id="cfBuy" class="purchase-button">Purchase</button>
+            </div>
+            <div class="shop-item" id="gemSpirit">
+                <h3>Gem Spirit</h3>
+                <p>Cost: <span id="gsCost" class="item-cost">5000</span> Gems</p>
+                <p>Output: +50 Gems per second</p>
+                <button id="gsBuy" class="purchase-button">Purchase</button>
+            </div>
+        </div>
+        
     </main>
+        
 <footer>Go To Index:<a href="/1-Index/index.html"> Here</a></footer>
 <script src="app.js"></script>
 <script src="/0-Global Scripts/handleEXT.js"></script>
