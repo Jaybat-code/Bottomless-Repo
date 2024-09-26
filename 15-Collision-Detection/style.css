@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(63, 58, 58);
 }
 .wasp{
     background-image: url(wasp.png);
@@ -8,6 +8,15 @@ body{
     background-size: cover;
     background-position: center;
     transform: rotateY(180deg);
-    margin:500px 500px;
+    position:absolute;
+    top:500px;
+    left:500px;
     border-radius: 50%;
+}
+.floor{
+    position: absolute;
+    background-color: green;
+    bottom:30px;
+    height:200px;
+    width:100%;
 }

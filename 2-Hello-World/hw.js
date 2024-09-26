@@ -1,8 +1,9 @@
-//whenever the page loads append an h1 element with the class hello to the document.
-document.addEventListener("DOMContentLoaded",()=>{
+
+//Creates a h1 element that will display the text that we define
+function createElement(){ 
     const helloWorld = document.createElement("h1");
     helloWorld.setAttribute("class","hello");
     helloWorld.innerText="Hello World"
-    document.body.appendChild(helloWorld)
-})
-    
+    document.body.appendChild(helloWorld);
+} 
+createElement();
