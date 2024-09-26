@@ -11,7 +11,7 @@ const descriptions = [
     "First Steps was me experimenting with animation in JavaScript. I made a controllable player that can move in 360 degrees, and then I decided to add a 'feed and grow' aspect to the program. You can spawn bits of cheese that will grow and speed up your player.",
     "This was my first time building rock paper scissors from memory with no external help with the logic. I utilized switch statements, doubly nested loops, objects even template literals. I even threw in some audio and animations, this project was a labor of love.",
     "I needed quite a lot of help to build this from documentation and other peoples examples I am hoping to revisit all of these projects and make them a lot better once I know what I'm talking about more lol. This project was fun to build and my introduction to 2D Matrix",
-    "I had this idea for a while now of remaking my room just in code (with no knowledge of collision and how that works) so most of my code was figuring out how to 'Animate' my player. I am hoping to add a LOT of interactivity to this project though, All of these are WIPS!",
+    "I wanted to build a clicker game for sure but most of all I really just wanted to implement a popup settings menu that would allow you to kind of controll the program. So the main point of building this was to prove I could 1) build a clicker game and 2) Make a settings menu!",
 ];
 
 const about = document.getElementById("about");
