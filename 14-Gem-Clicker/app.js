@@ -1,3 +1,4 @@
+
 const settingButtons = [
     {
         name:"sounds",
