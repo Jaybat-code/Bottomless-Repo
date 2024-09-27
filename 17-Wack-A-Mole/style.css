@@ -1,0 +1,33 @@
+body{
+    background:radial-gradient(rgb(143, 105, 111),beige);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 5px solid black;
+    width:1200px;
+    height:1200px;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows:30%,30%,30%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.hole{
+    border:5px solid white;
+    border-radius: 50%;
+    height:150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+img{
+    position:absolute;
+    width:200px;
+    bottom:25px;
+}
