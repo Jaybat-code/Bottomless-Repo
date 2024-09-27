@@ -1,4 +1,5 @@
 const descriptions = [
+    "This is my project index where I will be hosting all of my projects in one mega reposiotry, some may say it isn't efficient, I just say its funny",
     "My first project for this mega repository was a 'Hello World' project. It isn't as simple as just printing 'Hello World' on an HTML page—the text itself that displays on the page is entirely generated with JavaScript! I was pretty happy with this project at the time, but it was and still is the easiest project in my repo.",
     "At this stage, I was a huge fan of looping through arrays, so I came up with a program that would take a sentence and output each word one by one on the press of a button. I feel this was my first 'complex' program, but in reality, it was still fairly easy.",
     "I wanted a quick way to generate linear gradients with random RGB values and random angles. This turned out to be very useful for other projects since I am a huge fan of linear gradients, and the results of this project were super cool!",

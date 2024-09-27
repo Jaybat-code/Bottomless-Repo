@@ -228,3 +228,19 @@ span{
     border: 2px solid rgb(86, 121, 122); 
     box-shadow: 2px 2px 5px 2px rgb(166, 201, 138);
 }
+#ind:hover{
+    background-image: url('Assets/0.png');
+    background-size: 160%; 
+    background-position: center; 
+    color: transparent; 
+    border: 2px solid rgb(86, 121, 122); 
+    box-shadow: 2px 2px 5px 2px rgb(166, 201, 138);
+}
+#pal:hover{
+    background-image: url('Assets/14.png');
+    background-size: 160%; 
+    background-position: center; 
+    color: transparent; 
+    border: 2px solid rgb(86, 121, 122); 
+    box-shadow: 2px 2px 5px 2px rgb(166, 201, 138);
+}
