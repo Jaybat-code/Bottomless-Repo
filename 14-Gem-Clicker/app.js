@@ -1,4 +1,46 @@
 
+
+//PARTICLE SYSTEM
+function createParticles(event) {
+    const particleCount = 111;  
+    for (let i = 0; i < particleCount; i++) {
+        createParticle(event.clientX, event.clientY);
+    }
+}
+
+function createParticle(x, y) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    document.body.appendChild(particle);
+
+    
+    particle.style.left = `${x}px`;
+    particle.style.top = `${y}px`;
+
+    
+    const angle = Math.random() * 360;
+    const distance = Math.random() * 300;
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+
+    
+    particle.animate(
+        [
+            { transform: 'translate(0, 0)', opacity: 1 },
+            { transform: `translate(${moveX}px, ${moveY}px)`, opacity: 0 }
+        ],
+        {
+            duration: 1000, 
+            easing: 'ease-out',
+            fill: 'forwards'
+        }
+    );
+
+    
+    setTimeout(() => {
+        particle.remove();
+    }, 1000); 
+}
 const settingButtons = [
     {
         name:"sounds",
@@ -202,6 +244,7 @@ function toggleSettingsMenu(){
 //..localizing listener to the cog and the function.
 cog.addEventListener("click",toggleSettingsMenu);
 gemImg.addEventListener("click",clickLogic);
+gemImg.addEventListener("click",createParticles);
 updateGPS();
 
 
