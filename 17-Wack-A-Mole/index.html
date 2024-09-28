@@ -7,9 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/0-Global Styles/footer.css">
 </head>
-<body> 
+<body>
+    <div id="winScreen" class="overlay" style="display: none;">
+        <h1>You Win!</h1>
+        <button id="restartButton">Restart</button>
+    </div>
+
+    <div id="loseScreen" class="overlay" style="display: none;">
+        <h2>You Lose!</h2>
+        <button id="restartButtonLose">Restart Game</button>
+    </div>
+
+    <div id="startScreen" class="start-screen">
+        <h2>Wack 30 Moles to win!!</h2>
+        <h4>Please Select A Difficulty</h4>
+        <div class="difficulty-buttons">
+            <button data-tooltip="A relaxing 1.5 seconds between spawns" id="easyBtn">Easy</button>
+            <button data-tooltip="A good 1 second between spawns" id="medBtn">Medium</button>
+            <button data-tooltip="A tough .5 seconds between spawns" id="hardBtn">Hard</button>
+            <button data-tooltip="A horrid .2 seconds between spawns" id="extremeBtn">Extreme</button>
+        </div>
+        <button id="startButton" disabled>Start Game</button>
+    </div>    
+
     <h1>Moles Wacked: <span id="wackNum">0</span></h1>
-    <img id="hammerImg" src="./Assets/Hammer ready.png" alt="">
+    <img id="hammerImg" src="./Assets/Hammer ready.png" alt="Hammer">
+
     <div class="container">
         <div class="hole"></div>
         <div class="hole"></div>
@@ -22,8 +45,8 @@
         <div class="hole"></div>
     </div>
     
-<footer>Go To Index:<a href="/1-Index/index.html"> Here</a></footer>
-<script src="app.js"></script>
-<script src="/0-Global Scripts/handleEXT.js"></script>
+    <footer>Go To Index:<a href="/1-Index/index.html"> Here</a></footer>
+    <script src="app.js"></script>
+    <script src="/0-Global Scripts/handleEXT.js"></script>
 </body>
 </html>
