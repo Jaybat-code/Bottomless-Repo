@@ -26,5 +26,6 @@ a{
 }
 a:hover{
     font-size:19px;
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    z-index: 15;
 }

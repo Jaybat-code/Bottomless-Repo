@@ -26,8 +26,33 @@ body{
     align-items: center;
     position: relative;
 }
-img{
+.moleImg{
     position:absolute;
     width:200px;
     bottom:25px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: transform .5s ease-out;;
+}
+#cursorDiv{
+    position: relative;
+    width:500px;
+    height:500px;
+}
+#hammerImg{
+ position: absolute;
+    width:500px;
+    height:500px;
+    left:0px;
+    top:0px;
+    transition: transform 0.1s ease-in-out;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; /* Smooth rotation transition */
+    z-index: 10;
+}
+h1{
+    position: absolute;
+    top:45px;
 }
