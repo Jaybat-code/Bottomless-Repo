@@ -20,8 +20,8 @@ function createParticle(x, y) {
     
     const angle = Math.random() * 360;
     const distance = Math.random() * 300;
-    const moveX = Math.cos(angle) * distance;
-    const moveY = Math.sin(angle) * distance;
+    const moveX = Math.sin(angle) * distance;
+    const moveY = Math.cos(angle) * distance;
 
     
     particle.animate(
