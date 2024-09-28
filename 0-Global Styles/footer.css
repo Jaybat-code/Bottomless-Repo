@@ -19,6 +19,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 30;
 }
 a{
     color:rgb(255, 255, 255);
@@ -27,5 +28,4 @@ a{
 a:hover{
     font-size:19px;
     color:rgb(255, 255, 255);
-    z-index: 15;
 }

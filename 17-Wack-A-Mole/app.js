@@ -1,31 +1,60 @@
 const Moles=[
     {
-        name:"mole",hp:2,htmlText:`<img class="moleImg" src="./Assets/Mole.png">`,
+        name:"mole",hp:1,htmlText:`<img class="moleImg" src="./Assets/Mole.png">`,
     },
     {
-        name:"supermole",hp:5,htmlText:`<img class="moleImg" src="./Assets/superMole.png">`
+        name:"supermole",hp:3,htmlText:`<img class="moleImg" src="./Assets/superMole.png">`
     }
 ]
-const hole = document.querySelectorAll(".hole")
+const moleHole = document.querySelectorAll(".hole")
 const Holes=[
-    {hole:hole[0],hasMole:false,hasSuperMole:false},
-    {hole:hole[1],hasMole:false,hasSuperMole:false},
-    {hole:hole[2],hasMole:false,hasSuperMole:false},
-    {hole:hole[3],hasMole:false,hasSuperMole:false},
-    {hole:hole[4],hasMole:false,hasSuperMole:false},
-    {hole:hole[5],hasMole:false,hasSuperMole:false},
-    {hole:hole[6],hasMole:false,hasSuperMole:false},
-    {hole:hole[7],hasMole:false,hasSuperMole:false},
-    {hole:hole[8],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[0],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[1],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[2],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[3],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[4],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[5],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[6],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[7],hasMole:false,hasSuperMole:false},
+    {hole:moleHole[8],hasMole:false,hasSuperMole:false},
 ]
 
-function spawnMole(){
+function spawnMole() {
     setInterval(() => {
-        let randMoleIndex = Math.floor(Math.random()*Holes.length);
+        let randMoleIndex = Math.floor(Math.random() * Holes.length);
+        const selectedHole = Holes[randMoleIndex];
 
-    }, 2000);
+        // Check the state of the hole
+        if (!selectedHole.hasSuperMole) {
+            if (!selectedHole.hasMole) {
+                // Place a normal mole
+                selectedHole.hole.innerHTML = Moles[0].htmlText;
+                selectedHole.hasMole = true;
+            } else {
+                // Upgrade to a super mole
+                selectedHole.hole.innerHTML = Moles[1].htmlText;
+                selectedHole.hasMole = false; // Remove normal mole
+                selectedHole.hasSuperMole = true;
+            }
+        }
+    }, 2000); // Adjust interval timing as needed
 }
 
+
+function hitMole() {
+    for (let i = 0; i < Holes.length; i++) {
+        moleHole[i].addEventListener("click", () => {
+            console.log(Holes[i]); // Log the entire hole object
+        });
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    // All your code goes here
+    spawnMole();
+    hitMole();
+});
+ // Call the function to set up the event listeners
 
 
 
@@ -60,3 +89,6 @@ document.addEventListener("mousedown", () => {
     hammer.style.transform = "rotate(0deg)"; 
 
   })
+
+
+  
