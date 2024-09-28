@@ -15,6 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     column-gap: 20px;
+    cursor: crosshair
 }
 .hole{
     border:5px solid white;
