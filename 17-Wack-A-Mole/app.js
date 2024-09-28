@@ -1,10 +1,30 @@
-const moleHTML = `<img class="moleImg" src="./Assets/Mole.png" alt="A Mole Sprouts Out Of A Hole">`
-const holes = document.querySelectorAll(".hole")
+const Moles=[
+    {
+        name:"mole",hp:2,htmlText:`<img class="moleImg" src="./Assets/Mole.png">`,
+    },
+    {
+        name:"supermole",hp:5,htmlText:`<img class="moleImg" src="./Assets/superMole.png">`
+    }
+]
+const hole = document.querySelectorAll(".hole")
+const Holes=[
+    {hole:hole[0],hasMole:false,hasSuperMole:false},
+    {hole:hole[1],hasMole:false,hasSuperMole:false},
+    {hole:hole[2],hasMole:false,hasSuperMole:false},
+    {hole:hole[3],hasMole:false,hasSuperMole:false},
+    {hole:hole[4],hasMole:false,hasSuperMole:false},
+    {hole:hole[5],hasMole:false,hasSuperMole:false},
+    {hole:hole[6],hasMole:false,hasSuperMole:false},
+    {hole:hole[7],hasMole:false,hasSuperMole:false},
+    {hole:hole[8],hasMole:false,hasSuperMole:false},
+]
 
+function spawnMole(){
+    setInterval(() => {
+        let randMoleIndex = Math.floor(Math.random()*Holes.length);
 
-
-
-holes[3].innerHTML=moleHTML
+    }, 2000);
+}
 
 
 

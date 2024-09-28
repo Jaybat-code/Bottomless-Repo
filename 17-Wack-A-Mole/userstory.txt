@@ -1,0 +1,21 @@
+We need a wackamole game with 9 holes, a hammer that is animated with motion and sound and moles that are also animated with movmement and sound.
+
+the game board should have 9 holes 
+[X,X,X]
+[X,X,X]
+[X,X,X]
+At any given time there should be a 2 second timer set that should spawn a mole in a random location
+[X,X,X]         [X,M,X]
+[M,X,X] -- 2s   [M,X,X] and so on
+[X,X,X]         [X,X,X]
+
+If a mole finds a spot that a mole is already at and tries to appear above it, the mole will become a super mole and take 5 hits to take down
+
+[X,SM,SM]
+[SM,X,X]
+[X,X,m]
+
+IF the majority of the spots are superMoles (if 4 spots become super moles) you lose the game
+clicking on the image of a mole should do 1  damage
+hp of a normal mole is 2
+hp of a super mole is 5
