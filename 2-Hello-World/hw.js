@@ -1,4 +1,3 @@
-
 //Creates a h1 element that will display the text that we define
 function createElement(){ 
     const helloWorld = document.createElement("h1");
