@@ -1,0 +1,26 @@
+body{
+    background:radial-gradient(maroon,red,pink,rgb(161, 81, 148),rgb(11, 85, 85),cyan,cyan,cyan,blue);
+    height:100vh;
+}
+.screen{
+    background-color: black;
+    width:1200px;
+    height:1000px;
+    border:3px solid white;
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.dvd{
+    border:5px solid rgb(100, 89, 167);
+    width:50px;
+    height:50px;
+    color:rgb(48, 35, 11);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    font-weight: 800;
+}
